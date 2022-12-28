@@ -1,0 +1,86 @@
+ul {
+  list-style-type: none;
+  & li {
+      float: left;
+      &.cards {
+          height: 200px;
+          width: 200px;
+          background-color: blue;
+          border-radius: 4px;
+          margin: 20px;
+          position: relative;
+          &.first{
+              transition: .4s;
+              &:hover{
+                transform: scale(1.1);
+                box-shadow:  0px 4px 8px 2px #000000b3;
+              }
+          }
+          
+           &.second{
+              transition: .4s;
+              &:hover{
+                transform: scale(1.1);
+                box-shadow:  0px 4px 8px 2px #000000b3;
+                border: 6px solid red;
+              }
+          }
+          
+           &.third{
+              transition: .4s;
+              &:hover{
+                transform: scale(.5);
+                box-shadow:  0px 4px 8px 2px #000000b3;
+                border: 6px solid red;
+              }
+          }
+          
+           &.fourth{
+              transition: .4s;
+              background-color: red;
+              &:hover{
+                transform: scale(1);
+                box-shadow:  0px 4px 8px 2px #000000b3;
+              }
+          }
+          
+           &.fifth{
+              transition: .4s;
+              background: orange;
+              border: 6px solid #000;
+              &:hover{
+                transform: scale(1.2);
+                box-shadow: 0px 4px 8px 2px #f00;
+                text-shadow: 0px 4px 2px #000;
+                font-size: 22px;
+                font-weight: 900;
+                
+              }
+          }
+          
+           &.sixth{
+              transition: .4s;
+              background: orange;
+              border: 6px solid red;
+              &:hover{
+                transform: scale(1.2);
+                box-shadow: 0px 4px 8px 2px #f00;
+                text-shadow: 0px 4px 2px #000;
+                font-size: 22px;
+                font-weight: 900;
+                transform: rotate(40deg);
+              }
+          }
+          
+          & span{
+              color: #fff;
+              position: absolute;
+              top: 40%;     // You can keep it 50% if want to make it center of the div
+              left: 30%;    // You can keep it 50% if want to make it center of the div
+              transform: translate (-50%, -50%);
+            }
+        }
+       
+  }
+  
+}
